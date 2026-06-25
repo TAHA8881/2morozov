@@ -12,7 +12,7 @@ class AvtoObservation:
     def __str__(self) -> str:
         return (f"Дата: {self.date}, Название маршрута: {self.name}, "
                 f"Расстояние в километрах: {self.km} km, Cредний расход топлива на 100 километров: {self.rashod} топливо/100км, "
-                f"Стоимость одного литра топлива: {self.price} мм")
+                f"Стоимость одного литра топлива: {self.price} руб")
 
 
 class AvtoAnalyzer:
