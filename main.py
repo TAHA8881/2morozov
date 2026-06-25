@@ -36,7 +36,7 @@ def input_observation() ->  AvtoObservation:
 
     while True:
         try:
-            price = float(input("Введите тоимость одного литра топлива (руб., неотрицательное): "))
+            price = float(input("Введите cтоимость одного литра топлива (руб., неотрицательное): "))
             if price >= 0:
                 break
             print("Скорость ветра не может быть отрицательной.")
@@ -104,7 +104,7 @@ def main():
             if coldest is None:
                 print("Нет данных.")
             else:
-                print(f"Самый дорогой маршрут: {analyzer.priciest_day}")
+                print(f"Самый дорогой маршрут: {analyzer.priciest_day()}")
         else:
             print("Неверный выбор. Попробуйте снова.")
 

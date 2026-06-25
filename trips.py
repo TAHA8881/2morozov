@@ -26,7 +26,7 @@ class AvtoAnalyzer:
     def get_all(self) -> list:
         return self.observations
 # Топливо (л) = (Расстояние (км) × Расход (л/100 км)) / 100
-    def average_toplivo(self) -> float | None:
+    def average_toplivo(self) -> AvtoObservation | None:
         if not self.observations:
             return None
         average_toplivo= self.km * self.rashod/100
