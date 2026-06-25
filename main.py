@@ -1,11 +1,9 @@
-# main.py
-
 from trips import AvtoObservation,  AvtoAnalyzer
 
 def input_observation() ->  AvtoObservation:
     """Функция ввода данных с проверкой корректности."""
     while True:
-        date = input("Введите дату (например, 2026-06-24): ").strip()
+        date = float(input("Введите дату (например, 06.24): "))
         if date:
             break
         print("Дата не может быть пустой.")
@@ -27,7 +25,7 @@ def input_observation() ->  AvtoObservation:
 
     while True:
         try:
-            rashod = float(input("Введите влажность (0-100%): "))
+            rashod = float(input("Введите расход топлива в числах: "))
             if 0 <= rashod:
                 break
             print("Средний расход топлива на 100 километров должен быть от 0")
@@ -39,7 +37,7 @@ def input_observation() ->  AvtoObservation:
             price = float(input("Введите cтоимость одного литра топлива (руб., неотрицательное): "))
             if price >= 0:
                 break
-            print("Скорость ветра не может быть отрицательной.")
+            print("Скорость может быть отрицательной.")
         except ValueError:
             print("Ошибка: введите число.")
 

@@ -1,5 +1,3 @@
-# weather.py
-
 class AvtoObservation:
     """Класс для представления одного погодного наблюдения."""
     def __init__(self, date:float, km:float, name, rashod:float, price:float):
